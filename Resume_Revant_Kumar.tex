@@ -1,4 +1,4 @@
-\documentclass[10.5pt]{article}
+\documentclass[10pt]{article}
 \usepackage{fullpage}
 \pagestyle{empty}
 \raggedright
@@ -13,19 +13,19 @@
 \newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep 0pt}}{\end{list}}
 \newcommand{\schoolWithCourses}[5]{
  \textbf{#1} $\bullet$ #2 \\
- \underline{\textbf{\emph{#3}}} $\bullet$ #5 \hfill (#4) \\
+ \textbf{\emph{#3}} $\bullet$ #5 \hfill (#4) \\
 }
 \newcommand{\schoolWithCoursesWithoutGpa}[4]{
  \textbf{#1} $\bullet$ #2 \\
- \underline{\textbf{\emph{#3}}} \hfill (#4) \\
+ \textbf{\emph{#3}} \hfill (#4) \\
 }
 \newcommand{\school}[4]{
  \textbf{#1} #2 $\bullet$ #3\\ 
 #4 \\
 }
-\newcommand{\employer}[4]{ \textbf{#1} $\bullet$ #2 \\ \underline{\textbf{\emph{#4}}} \hfill (#3)\\  }
+\newcommand{\employer}[4]{ \textbf{#1} $\bullet$ #2 \\ \textbf{\emph{#4}} \hfill (#3)\\  }
 \newcommand{\employerName}[2]{ \textbf{#1} $\bullet$ #2 \\  }
-\newcommand{\employmentDesignation}[2]{ \underline{\textbf{\emph{#1}}} \hfill #2\\  }
+\newcommand{\employmentDesignation}[2]{ \textbf{\emph{#1}} \hfill #2\\  }
 % END RESUME DEFINITIONS
 
 \begin{document}
@@ -33,39 +33,67 @@
 
 \contact{Revant Kumar}
 {391 17th Street NW Apt 2058, Atlanta, Georgia 30363}
-{+1-650-440-8946 $\bullet$ rkumar74@gatech.edu $\bullet$ https://www.linkedin.com/in/revantkumar}
+{+1-650-440-8946 $\bullet$ rkumar74@gatech.edu $\bullet$ https://www.linkedin.com/in/revantkumar $\bullet$ https://github.com/revantkumar}
 
 \vspace{2pt}
 
 \vspace{-9pt}\header{Education}
 
 \schoolWithCoursesWithoutGpa{Georgia Institute of Technology}{USA}{Master of Science in Computer Science}{August 2014 -- December 2015 (Expected)}
+\vspace{-2pt}
 \area{Selected Coursework:}{Machine Learning {\tiny$\bullet$} Data and Visual Analytics  {\tiny$\bullet$} Algorithms {\tiny$\bullet$} Social Computing}
 
-\vspace{-3pt}\schoolWithCourses{Indian Institute of Technology Guwahati}{India}{Bachelor of Technology in Mathematics and Computing}{July 2010 -- May 2014}{GPA: 3.9/4.0}
+\schoolWithCourses{Indian Institute of Technology Guwahati}{India}{Bachelor of Technology in Mathematics and Computing}{July 2010 -- May 2014}{GPA: 3.9/4.0}
+\vspace{-2pt}
 \area{Selected Coursework:}{Introduction to Computing {\tiny$\bullet$} Data Structures {\tiny$\bullet$} Data Structures Lab {\tiny$\bullet$} Design and Analysis of Algorithms {\tiny$\bullet$} Probability Theory and Random Processes {\tiny$\bullet$} Operating Systems {\tiny$\bullet$} Scientific Computing}
 
-\vspace{-2pt}\header{Work/Research Experience}
+\vspace{-1pt}\header{Work/Research Experience}
 
 \employer{Japan Advanced Institute of Science and Technology}{Japan}{May -- July 2012}{Research Assistant}
 	\begin{achievements}	
 	\item Developed a Small Space Algorithm for Removing Small Connected Components from a Binary Image with Professor Tetsuo Asano.
 	\item From an algorithmic point of view, the problem can be solved in $O(n)$ time and $O(n)$ work space. 
-	\item Proposed a new algorithm for computing the size-threshold binary image for any binary image of $n$ pixels in $O(n \log n)$ time using only $O(\sqrt{n})$ work space.
+	\item Proposed a new algorithm for computing the size-threshold binary image in $O(n \log n)$ time using only $O(\sqrt{n})$ work space.
+	%for any binary image of $n$ pixels in $O(n \log n)$ time using only $O(\sqrt{n})$ work space.
 	\end{achievements}
 
 \employer{Institute of Statistical Mathematics}{Japan}{May -- July 2013}{Research Assistant}
 	\begin{achievements}
 	\item Worked on Density Estimation in Infinite Dimensional Exponential Families with Professor Kenji Fukumizu.
-	\item Reviewed the Mathematical Equations for the Journal Paper. 
-	\item De-bugged the Matlab Code which was later used for simulation.
+	\item Reviewed the Mathematical Equations for the Journal Paper and De-bugged the Matlab Code which was later used for simulation.
 	\end{achievements}
 	
-\vspace{4pt}
+\vspace{3pt}
+
+\header{Hackathon}
+
+\project{eBay Discovery}{HackGT}{September 19 -- 21, 2014}
+	\begin{achievements}
+	%\item Built a web interface to play and interact with eBay APIs.
+	\item Used eBay's Finding API and Shopping API to extract details about sellers and items searched by the buyers.
+	\item Wrote Python scripts to parse the data obtained in JSON format which was later used by the UI Team.
+	\item Used D3.js to make visualizations for Price Trends Analysis of items returned by the keyword search.
+	\end{achievements}	
+	
+\vspace{3pt}
 
 \header{Projects}
 
-\project{Collecting and Visualizing Last.fm Data}{Georgia Institute of Technology}{August 2014 -- Present}
+\project{SMS Spam Detection}{Georgia Institute of Technology}{October 2014 -- Present}
+	\begin{achievements}
+	\item Built binary classifiers to distinguish between legitimate and spam SMSes based on their text features.
+	\item Implemented classifiers using Naive Bayes with Laplace Smoothing and Support Vector Machine (SVM) with Linear Kernel.
+	%\item Achieved around 97\% overall accuracy for both the classifiers.
+	\end{achievements}	
+
+\project{Image Compression}{Georgia Institute of Technology}{October 2014 -- Present}
+	\begin{achievements}
+	\item Given a RGB bitmap image file, clustered the pixels using algorithms -- K-means \& K-medoids in Matlab.
+	\item In K-medoids clustering, Manhattan Distance and Partitioning Around Medoids (PAM) algorithm were used.
+	\item Created the final compressed image by coloring each cluster with the representative color of it's centroid.
+	\end{achievements}	
+
+\project{Collecting and Visualizing Last.fm Data}{Georgia Institute of Technology}{August -- September 2014}
 	\begin{achievements}
 	\item Used the Last.fm API to download data about music tracks, and 100 similar tracks for each track.
 	\item Wrote Python Scripts to create and clean the data files using the downloaded Last.fm data.
@@ -85,52 +113,37 @@
 	\item Worked on Target-Language Edit Hints.
 	\end{achievements}	
 	
-\project{Generating the Initials of a Signature}{Indian Institute of Technology Guwahati}{November 2012}
-	\begin{achievements}
-	\item Implemented Cubic Spline Interpolation Technique to generate the initials of a Signature.
-	\end{achievements}
-	
-\vspace{4pt}
+\vspace{3pt}
 
-\header{Hackathon}
 
-\project{eBay Discovery}{HackGT}{September 19-21, 2014}
-	\begin{achievements}
-	\item Built a web interface to play and interact with eBay APIs.
-	\item Used eBay's Finding API and Shopping API to extract details about sellers and items searched by the buyers.
-	\item Wrote Python scripts to parse the data obtained in JSON format which was later used by the UI Team.
-	\item Used D3.js to make visualizations for Price Trends Analysis of items returned by the keyword search.
-	\end{achievements}	
-	
-\vspace{4pt}
 
 \header{Skills}
 \begin{achievements}
 \item Programming Languages: C, C++, Python
-\item Familiarity with Matlab, SQLite, HTML, D3.js, Gephi, \LaTeX
+\item Familiarity with Matlab, SQLite, HTML, D3.js, Gephi, Tableau, Git, \LaTeX
 \item Familiarity with Linux, Mac OS X, Windows
 \item Natural Languages: English, Hindi, Spanish (Current Level 7 on Duolingo), Japanese (Basic)
 \end{achievements}
 	
-\vspace{4pt}
+\vspace{3pt}
 	
-\header{Publications/Posters/Presentations}
+\header{Publications/Presentations}
 \begin{achievements}
 \item Journal Publication: Tetsuo Asano, Revant Kumar: A Small-Space Algorithm for Removing Small Connected Components from a Binary Image. IEICE Transactions, Vol. E96-A, No. 6, pp. 1044-1050 (June 2013)
-\item Poster: Revant Kumar, Arjun Sharma, Sandipan Dandapat and Partha Sarathi Mandal: Machine Translation Systems Using Translation Memory. IIT Guwahati (May 2014)
+%\item Poster: Revant Kumar, Arjun Sharma, Sandipan Dandapat and Partha Sarathi Mandal: Machine Translation Systems Using Translation Memory. IIT Guwahati (May 2014)
 \item Mention in Acknowledgements: Bharath Sriperumbudur, Kenji Fukumizu, Arthur Gretton, Aapo Hyv\"{a}rinen: Density Estimation in Infinite Dimensional Exponential Families. arXiv:1312.3516 [math.ST] (December 2013)
 \item Presentation: Revant Kumar and Ulrich R\"{u}de: "Multigrid Methods", 11th Indo-German Winter Academy, December 11-17, 2012.
 \end{achievements} 
 
-\vspace{4pt}
+\vspace{3pt}
 
 \header{Honors and Awards}
 \begin{achievements}
 \item Erd\H{o}s Number: 3; Path: Revant Kumar $\rightarrow$ Tetsuo Asano $\rightarrow$ Boris Aronov / Frances F. Yao $\rightarrow$ Paul Erd\H{o}s
 %\item Selected among the top 2 undergraduates from IIT Guwahati to participate in the 11th Indo-German Winter Academy 2012 under the supervision of Professor Ulrich Rude from University of Erlangen Nuremberg, Germany.
-\item Best Student Technical Presentation at Techniche, IIT Guwahati in September 2012
-\item Received MCM Scholarship for 3 years from IIT Guwahati 
-\item Completed Youth Empowerment and Skills (YES+) Course offered by Art of Living
+\item Best Student Technical Presentation Award at Techniche, IIT Guwahati in September 2012
+%\item Received MCM Scholarship for 3 years from IIT Guwahati 
+\item Completed Youth Empowerment and Skills (YES+) Course offered by The Art of Living
 \end{achievements}
 
 %\vspace{4pt}
