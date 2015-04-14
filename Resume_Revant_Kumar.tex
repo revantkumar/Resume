@@ -41,10 +41,10 @@
 
 \schoolWithCourses{Georgia Institute of Technology}{USA}{Master of Science in Computer Science}{August 2014 -- December 2015 (Expected)}{GPA: 3.75/4.00}
 \vspace{-2pt}
-\area{Selected Coursework:}{Machine Learning {\tiny$\bullet$} Data and Visual Analytics {\tiny$\bullet$} Algorithms {\tiny$\bullet$} Social Computing {\tiny$\bullet$}  Deep Learning for Perception* {\tiny$\bullet$}  Advanced Internet Computing* {\tiny$\bullet$} Web Search \& Text Mining* \ \ \ \ \ \ \ \  (* -- Courses going to take in Spring'15)}
+\area{Selected Coursework:}{Machine Learning {\tiny$\bullet$} Data and Visual Analytics {\tiny$\bullet$} Algorithms {\tiny$\bullet$} Social Computing {\tiny$\bullet$}  Deep Learning for Perception* {\tiny$\bullet$}  Advanced Internet Computing* {\tiny$\bullet$} Web Search \& Text Mining* \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (* -- Current Courses)} %going to take in Spring'15)}
 %\area{}{* -- Courses going to take in Spring'15}
 
-\schoolWithCourses{Indian Institute of Technology Guwahati}{India}{Bachelor of Technology in Mathematics and Computing}{July 2010 -- May 2014}{GPA: 3.9/4.0}
+\schoolWithCourses{Indian Institute of Technology Guwahati}{India}{Bachelor of Technology in Mathematics and Computing}{July 2010 -- May 2014}{GPA: 8.31/10.00}
 %\vspace{-2pt}
 %\area{Selected Coursework:}{Introduction to Computing {\tiny$\bullet$} Data Structures {\tiny$\bullet$} Data Structures Lab {\tiny$\bullet$} Design and Analysis of Algorithms {\tiny$\bullet$} Probability Theory and Random Processes {\tiny$\bullet$} Operating Systems {\tiny$\bullet$} Databases {\tiny$\bullet$} Scientific Computing}
 
@@ -56,6 +56,11 @@
 %	\begin{achievements}	
 %	\item Working on building a a Simplified Specification of Information Visualization which is the Challenge of Interaction
 %	\end{achievements}
+
+\employer{Information Interfaces Research Group, Georgia Tech}{USA}{January 2015 -- Present}{Graduate Research Assistant under Professor John Stasko}
+	\begin{achievements}	
+	\item Developing a web-based application using Javascript to enable non-programmers create visualizations to analyze various data-sets.
+	\end{achievements}
 
 \employer{Japan Advanced Institute of Science and Technology}{Japan}{May -- July 2012}{Research Assistant under Professor Tetsuo Asano}
 	\begin{achievements}	
@@ -73,20 +78,21 @@
 	
 \vspace{3pt}
 
-\header{Hackathon}
-
-\project{eBay Discovery}{HackGT}{September 19 -- 21, 2014}
-	\begin{achievements}
-	%\item Built a web interface to play and interact with eBay APIs.
-	\item Used eBay's Finding API and Shopping API to extract details about sellers and items searched by the buyers.
-	\item Wrote Python scripts to parse the data obtained in JSON format which was later used by the UI Team.
-	\item Used D3.js to make visualizations for Price Trends Analysis of items returned by the keyword search.
-	\end{achievements}	
-	
-\vspace{3pt}
-
 \header{Projects}
 
+\project{Multifaceted Collaborative Filtering Model}{Georgia Institute of Technology}{January 2015 -- Present}
+	\begin{achievements}
+	\item Wrote python scripts to integrate baseline, item-based neighborhood and SVD++ models in a single combined model.
+	\item Applied 10-fold cross validation to choose the rank (number of latent factors), learning rate and regularization parameter.
+	\item Achieved Root Mean Square Error (RMSE) of 0.901 on the test data-set (using MovieLens Data-set).
+	\end{achievements}	
+	
+\project{Modeling Aspects, Ratings \& Sentiments for Movie Recommender}{Georgia Institute of Technology}{January 2015 -- Present}
+\begin{achievements}
+	\item Wrote python scripts to jointly model the Aspects, Ratings and Sentiments for Movie Recommendation using data from IMDb.
+	\item Achieved Mean Square Error of 4.97 on the held-out test data-set as measured by McNemar's test.
+	\end{achievements}	
+	
 \project{SMS Spam Detection}{Georgia Institute of Technology}{October -- December 2014}
 	\begin{achievements}
 	\item Built binary classifiers to distinguish between legitimate and spam SMSes based on their text features in Python.
@@ -105,12 +111,6 @@
 	\item Applied Latent Dirichlet Allocation (LDA) to Yelp Reviews to extract specific topics from them.
 	\item Predicted ratings of extracted topics for each review by applying Multi-Aspect Sentiment Analysis, instead of overall rating of reviews.
 	\end{achievements}	
-	
-\project{Recommendation System}{Georgia Institute of Technology}{October -- November 2014}
-	\begin{achievements}
-	\item Implemented a Recommender System using Low-Rank Matrix Factorization and Gradient Descent in Matlab.
-	\item Achieved Root Mean Square Error (RMSE) of 0.93 on the test data-set.
-	\end{achievements}	
 
 \project{Image Compression}{Georgia Institute of Technology}{September -- October 2014}
 	\begin{achievements}
@@ -125,28 +125,28 @@
 	\item Wrote Python Scripts to collect and clean the data about similar music tracks using the Last.fm API.
 	\item Used the tool Gephi to visualize the data as an undirected graph.
 	\end{achievements}	
-
-\project{Building a Search Engine}{Udacity}{June -- July 2014}
-	\begin{achievements}
-	\item Built a search engine using Python.
-	\item Implemented key search engine components including a Crawler, an Index and a Page Rank Algorithm.
-	\end{achievements}
-	
-\project{Machine Translation System using Translation Memory}{Indian Institute of Technology Guwahati}{January -- March 2014}
-	\begin{achievements}
-	\item Implemented a Machine Translation System using Translation Memory.
-	\item Found close matches from Translation Memory using Edit-Based Distance and worked on Target-Language Edit Hints.
-	\end{achievements}	
 	
 \vspace{3pt}
 
 \header{Skills}
 \begin{achievements}
 \item Programming Languages: C, C++, Python
-\item Familiarity with Matlab, SQLite, D3.js, Gephi, Tableau, HTML, Git, \LaTeX, Octave, Weka%, MongoDB, Robomongo, Hadoop, Pig
+\item Familiarity with Matlab, SQLite, D3.js, Gephi, Tableau, HTML, Javascript, CSS, Git, \LaTeX, Octave, Weka, Hadoop, Pig%, MongoDB, Robomongo, Hadoop, Pig
 \item Familiarity with Linux, Mac OS X, Windows
 \item Natural Languages: English, Hindi, Spanish (Current Level 7 on Duolingo), Japanese (Basic)
 \end{achievements}
+	
+\vspace{3pt}
+
+\header{Hackathon}
+
+\project{eBay Discovery}{HackGT}{September 19 -- 21, 2014}
+	\begin{achievements}
+	%\item Built a web interface to play and interact with eBay APIs.
+	\item Used eBay's Finding API and Shopping API to extract details about sellers and items searched by the buyers.
+	\item Wrote Python scripts to parse the data obtained in JSON format which was later used by the UI Team.
+	\item Used D3.js to make visualizations for Price Trends Analysis of items returned by the keyword search.
+	\end{achievements}	
 	
 \vspace{3pt}
 	
@@ -161,7 +161,7 @@
 
 \vspace{3pt}
 
-\header{Honors and Awards}
+\header{Honors}
 \begin{achievements}
 \item Erd\H{o}s Number: 3; Path: Revant Kumar $\rightarrow$ Tetsuo Asano $\rightarrow$ Boris Aronov / Frances F. Yao $\rightarrow$ Paul Erd\H{o}s
 %\item Selected among the top 2 undergraduates from IIT Guwahati to participate in the 11th Indo-German Winter Academy 2012 under the supervision of Professor Ulrich Rude from University of Erlangen Nuremberg, Germany.
